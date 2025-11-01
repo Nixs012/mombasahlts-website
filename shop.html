@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Mombasa Hamlets FC</title>
+    <meta name="description" content="Official merchandise store of Mombasa Hamlets Football Club">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <aside class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="sidebar-logo">
+            </div>
+            <button class="sidebar-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="/matches.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                <li><a href="/players.html"><i class="fas fa-users"></i> Players</a></li>
+                <li><a href="/media.html"><i class="fas fa-photo-video"></i> Media</a></li>
+                <li><a href="/shop.html" class="active"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                <li><a href="/events.html"><i class="fas fa-calendar-check"></i> Events</a></li>
+                <li><a href="/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="header-logo">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/matches.html">Matches</a></li>
+                <li><a href="/players.html">Players</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="/shop.html" class="active">Shop</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Shopping Cart Icon -->
+        <div class="cart-icon-container">
+            <button class="cart-icon" aria-label="Shopping cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero shop-hero">
+            <div class="hero-content">
+                <h1 class="animate-pop-in">Official Store</h1>
+                <p class="animate-pop-in">Wear the colors with pride</p>
+            </div>
+        </section>
+
+        <!-- Shop Navigation -->
+        <nav class="shop-categories" aria-label="Product categories">
+            <ul>
+                <li><a href="#jerseys" class="category-link active" data-category="jerseys">Jerseys</a></li>
+                <li><a href="#training" class="category-link" data-category="training">Training Wear</a></li>
+                <li><a href="#accessories" class="category-link" data-category="accessories">Accessories</a></li>
+                <li><a href="#equipment" class="category-link" data-category="equipment">Equipment</a></li>
+                <li><a href="#sale" class="category-link" data-category="sale">Sale</a></li>
+            </ul>
+        </nav>
+
+        <!-- Featured Products -->
+        <section class="featured-products" aria-labelledby="featured-heading">
+            <h2 id="featured-heading" class="visually-hidden">Featured Products</h2>
+            <div class="featured-slider">
+                <div class="featured-slide">
+                    <img src="/images/featured-jersey.jpg" alt="New Home Jersey 2025">
+                    <div class="slide-content">
+                        <h3>New Home Jersey 2025</h3>
+                        <p>Get the latest home kit and support the team in style</p>
+                        <a href="#jerseys" class="btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" aria-labelledby="products-heading">
+            <div class="container">
+                <h2 id="products-heading" class="section-title">Our Products</h2>
+                
+                <div class="products-filter">
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" class="filter-select">
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="size-filter">Size:</label>
+                        <select id="size-filter" class="filter-select">
+                            <option value="all">All Sizes</option>
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="jerseys" data-price="2500">
+                    <div class="product-image">
+                        <img src="/images/product-home-jersey.jpg" alt="Home Jersey 2025">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="1">Quick View</button>
+                            </div>
+                            <span class="product-badge new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Home Jersey 2025</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 2,500</span>
+                                <span class="original-price">KSh 3,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="1">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="jerseys" data-price="2500">
+                    <div class="product-image">
+                        <img src="/images/product-away-jersey.jpg" alt="Away Jersey 2025">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="2">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Away Jersey 2025</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 2,500</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="2">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="training" data-price="1800">
+                    <div class="product-image">
+                        <img src="/images/product-training-jacket.jpg" alt="Training Jacket">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="3">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Training Jacket</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 1,800</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="3">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="accessories" data-price="800">
+                    <div class="product-image">
+                        <img src="/images/product-scarf.jpg" alt="Team Scarf">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="4">Quick View</button>
+                            </div>
+                            <span class="product-badge sale">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Team Scarf</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 800</span>
+                                <span class="original-price">KSh 1,200</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="4">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-category="accessories" data-price="600">
+                    <div class="product-image">
+                        <img src="/images/product-cap.jpg" alt="Team Cap">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="5">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Team Cap</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 600</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="5">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-category="equipment" data-price="1500">
+                    <div class="product-image">
+                        <img src="/images/product-football.jpg" alt="Official Match Ball">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="6">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Official Match Ball</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 1,500</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="6">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-category="training" data-price="1200">
+                    <div class="product-image">
+                        <img src="/images/product-training-top.jpg" alt="Training Top">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="7">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Training Top</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 1,200</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="7">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-category="jerseys" data-price="2200">
+                    <div class="product-image">
+                        <img src="/images/product-third-jersey.jpg" alt="Third Jersey 2025">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="8">Quick View</button>
+                            </div>
+                            <span class="product-badge new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Third Jersey 2025</h3>
+                            <div class="product-price">
+                                <span class="current-price">KSh 2,200</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart" data-product="8">Add to Cart</button>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers" aria-labelledby="offers-heading">
+            <div class="container">
+                <h2 id="offers-heading" class="section-title">Special Offers</h2>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Free Shipping</h3>
+                            <p>On orders over KSh 5,000</p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Student Discount</h3>
+                            <p>15% off with valid student ID</p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Season Ticket Holder</h3>
+                            <p>10% discount on all merchandise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <aside class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+            <div class="empty-cart-message">
+                <p>Your cart is empty</p>
+                <a href="#" class="btn">Continue Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">KSh 0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Product Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Use</a>
+            </div>
+            <p>&copy; 2025 Mombasa Hamlets FC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/shop.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

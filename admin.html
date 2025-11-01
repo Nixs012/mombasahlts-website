@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mombasa Hamlets Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+</head>
+<body>
+    <div class="admin-container">
+        
+<div class="sidebar-overlay"></div>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="images/29.jpg" alt="Mombasa Hamlets Logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active" data-tab="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#" data-tab="news"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="#" data-tab="matches"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                    <li><a href="#" data-tab="players"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="#" data-tab="results"><i class="fas fa-trophy"></i> Results</a></li>
+                    <li><a href="#" data-tab="media"><i class="fas fa-photo-video"></i> Media</a></li>
+                    <li><a href="#" data-tab="shop"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                    <li><a href="#" data-tab="events"><i class="fas fa-calendar-day"></i> Events</a></li>
+                    <li><a href="#" data-tab="about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#" data-tab="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#" data-tab="settings"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="header-left">
+                    <button class="menu-toggle" title="Toggle menu"><i class="fas fa-bars"></i></button>
+                    <h1 id="page-title">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <span>Admin User</span>
+                    </div>
+                    <button id="logout-button" class="btn-logout" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <!-- Dashboard Tab Content (default) -->
+                <div class="tab-content active" id="dashboard-tab">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>News Articles</h3>
+                                <p>24</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Upcoming Matches</h3>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Players</h3>
+                                <p>28</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Site Visitors</h3>
+                                <p>1.2M</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dashboard specific content sections -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Recent Activity</h2>
+                        </div>
+                        <div class="section-body">
+                            <p>Your recent admin activities will appear here.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- Contact Tab Content -->
+                <div class="tab-content" id="contact-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Contact Messages</h2>
+                            <button class="btn" id="refresh-contacts-btn">
+                                <i class="fas fa-sync-alt"></i> Refresh
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Subject</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-08-20</td>
+                                        <td>James Mwangi</td>
+                                        <td>james@example.com</td>
+                                        <td>Season Ticket Inquiry</td>
+                                        <td><span class="status-new">New</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-reply" title="Reply"><i class="fas fa-reply"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-18</td>
+                                        <td>Lucy Wanjiku</td>
+                                        <td>lucy@example.com</td>
+                                        <td>Partnership Opportunity</td>
+                                        <td><span class="status-in-progress">In Progress</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-reply" title="Reply"><i class="fas fa-reply"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-15</td>
+                                        <td>Robert Ochieng</td>
+                                        <td>robert@example.com</td>
+                                        <td>Youth Team Tryouts</td>
+                                        <td><span class="status-resolved">Resolved</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-reply" title="Reply"><i class="fas fa-reply"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-12</td>
+                                        <td>Mary Atieno</td>
+                                        <td>mary@example.com</td>
+                                        <td>Merchandise Question</td>
+                                        <td><span class="status-resolved">Resolved</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-reply" title="Reply"><i class="fas fa-reply"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-10</td>
+                                        <td>David Kimathi</td>
+                                        <td>david@example.com</td>
+                                        <td>Website Feedback</td>
+                                        <td><span class="status-in-progress">In Progress</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-reply" title="Reply"><i class="fas fa-reply"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>View Message</h2>
+                        </div>
+                        
+                        <div class="section-body">
+                            <div class="message-details">
+                                <div class="message-header">
+                                    <h3>Season Ticket Inquiry</h3>
+                                    <div class="message-meta">
+                                        <span><strong>From:</strong> James Mwangi &lt;james@example.com&gt;</span>
+                                        <span><strong>Date:</strong> August 20, 2023 at 14:30</span>
+                                        <span><strong>Status:</strong> <span class="status-new">New</span></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="message-content">
+                                    <p>Hello, I'm interested in purchasing season tickets for the upcoming season. Could you please send me information about pricing, available seating options, and any early bird discounts? I've been a fan of Mombasa Hamlets for five years and am excited to support the team this season!</p>
+                                    
+                                    <p>Thank you,<br>James Mwangi</p>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button class="btn btn-reply"><i class="fas fa-reply"></i> Reply</button>
+                                    <button class="btn btn-status"><i class="fas fa-tasks"></i> Mark as In Progress</button>
+                                    <button class="btn btn-resolve"><i class="fas fa-check"></i> Mark as Resolved</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Contact Information</h2>
+                            <button class="btn" id="edit-contact-btn">
+                                <i class="fas fa-edit"></i> Edit Information
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <div class="contact-info-grid">
+                                <div class="contact-info-card">
+                                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-building"></i>
+                                        <span>Mombasa Hamlets FC</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-road"></i>
+                                        <span>Sports Road, Mombasa</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Kenya</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-card">
+                                    <h3><i class="fas fa-phone"></i> Phone & Email</h3>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+254 712 345 678</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>info@mombasahamlets.com</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-ticket-alt"></i>
+                                        <span>tickets@mombasahamlets.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-card">
+                                    <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-calendar-day"></i>
+                                        <span>Monday - Friday: 9am - 5pm</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-calendar-day"></i>
+                                        <span>Saturday: 10am - 2pm</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fas fa-calendar-day"></i>
+                                        <span>Sunday: Closed</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-card">
+                                    <h3><i class="fas fa-share-alt"></i> Social Media</h3>
+                                    <div class="contact-detail">
+                                        <i class="fab fa-facebook"></i>
+                                        <span>Facebook: /mombasahamlets</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter: @mombasahamlets</span>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram: @mombasahamlets</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="admin-form" style="margin-top: 30px;">
+                                <h3>Update Contact Information</h3>
+                                <div class="form-group">
+                                    <label for="contact-address">Address</label>
+                                    <textarea id="contact-address" rows="2">Mombasa Hamlets FC, Sports Road, Mombasa, Kenya</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-phone">Phone Number</label>
+                                    <input type="text" id="contact-phone" value="+254 712 345 678">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address</label>
+                                    <input type="email" id="contact-email" value="info@mombasahamlets.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-hours">Office Hours</label>
+                                    <textarea id="contact-hours" rows="2">Monday - Friday: 9am - 5pm\nSaturday: 10am - 2pm\nSunday: Closed</textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-save">Save Changes</button>
+                                    <button type="button" class="btn btn-cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Tab Content -->
+                <div class="tab-content" id="news-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>News Management</h2>
+                            <button class="btn" id="add-news-btn">
+                                <i class="fas fa-plus"></i> Add New Article
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Team Wins Championship</td>
+                                        <td>First Team</td>
+                                        <td>2023-08-15</td>
+                                        <td><span class="status-published">Published</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-unpublish" title="Unpublish"><i class="fas fa-eye-slash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Add New Article</h2>
+                        <form id="news-form" class="admin-form">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Image URL</label>
+                                <input type="text" id="image" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="summary">Summary</label>
+                                <textarea id="summary" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select id="category" required>
+                                    <option value="first-team">First Team</option>
+                                    <option value="academy">Academy</option>
+                                    <option value="women">Women</option>
+                                    <option value="tickets">Tickets</option>
+                                    <option value="features">Features</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="breaking"> Breaking News
+                                </label>
+                            </div>
+                            <button type="submit" class="btn">Publish Article</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Matches Tab Content -->
+                <div class="tab-content" id="matches-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Matches Management</h2>
+                            <button class="btn" id="add-match-btn">
+                                <i class="fas fa-plus"></i> Add New Match
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Match</th>
+                                        <th>Competition</th>
+                                        <th>Venue</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-08-20</td>
+                                        <td>Mombasa Hamlets vs Nairobi City</td>
+                                        <td>Premier League</td>
+                                        <td>Home</td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Add New Match</h2>
+                        <form id="match-form" class="admin-form">
+                            <div class="form-group">
+                                <label for="match-date">Date</label>
+                                <input type="date" id="match-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="home-team">Home Team</label>
+                                <input type="text" id="home-team" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="away-team">Away Team</label>
+                                <input type="text" id="away-team" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="competition">Competition</label>
+                                <input type="text" id="competition" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="venue">Venue</label>
+                                <select id="venue" required>
+                                    <option value="home">Home</option>
+                                    <option value="away">Away</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Add Match</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Players Tab Content -->
+                <div class="tab-content" id="players-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Players Management</h2>
+                            <button class="btn" id="add-player-btn">
+                                <i class="fas fa-plus"></i> Add New Player
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Position</th>
+                                        <th>Number</th>
+                                        <th>Nationality</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div style="display: flex; align-items: center;">
+                                                <img src="https://via.placeholder.com/40" alt="Player" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; object-fit: cover;">
+                                                John Doe
+                                            </div>
+                                        </td>
+                                        <td>Forward</td>
+                                        <td>9</td>
+                                        <td>Kenya</td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Add New Player</h2>
+                        <form id="player-form" class="admin-form">
+                            <div class="form-group">
+                                <label for="player-name">Full Name</label>
+                                <input type="text" id="player-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-position">Position</label>
+                                <select id="player-position" required>
+                                    <option value="goalkeeper">Goalkeeper</option>
+                                    <option value="defender">Defender</option>
+                                    <option value="midfielder">Midfielder</option>
+                                    <option value="forward">Forward</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-number">Jersey Number</label>
+                                <input type="number" id="player-number" min="1" max="99" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-nationality">Nationality</label>
+                                <input type="text" id="player-nationality" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-dob">Date of Birth</label>
+                                <input type="date" id="player-dob" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-image">Profile Image</label>
+                                <input type="file" id="player-image">
+                            </div>
+                            <button type="submit" class="btn">Add Player</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Other tabs would follow the same pattern -->
+                <div class="tab-content" id="results-tab">
+                    <!-- Your existing results content -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Results Management</h2>
+                            <button class="btn" id="add-result-btn">
+                                <i class="fas fa-plus"></i> Add New Result
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <!-- Results Table -->
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Match</th>
+                                        <th>Score</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="results-list">
+                                    <!-- Sample row - will be populated by JS -->
+                                    <tr>
+                                        <td>2023-08-15</td>
+                                        <td>Man Utd vs Liverpool</td>
+                                        <td>2-1</td>
+                                        <td><span class="status-published">Published</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-unpublish" title="Unpublish"><i class="fas fa-eye-slash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <!-- Add/Edit Result Form (initially hidden) -->
+                            <div id="result-form-container" class="form-container">
+                                <h3>Add/Edit Match Result</h3>
+                                <form id="result-form" class="admin-form">
+                                    <input type="hidden" id="result-id">
+                                    <div class="form-group">
+                                        <label for="match-date">Date</label>
+                                        <input type="date" id="match-date" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="home-team">Home Team</label>
+                                        <input type="text" id="home-team" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="away-team">Away Team</label>
+                                        <input type="text" id="away-team" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="home-score">Home Score</label>
+                                        <input type="number" id="home-score" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="away-score">Away Score</label>
+                                        <input type="number" id="away-score" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="match-report">Match Report</label>
+                                        <textarea id="match-report" rows="5"></textarea>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-save">Save Result</button>
+                                        <button type="button" class="btn btn-cancel">Cancel</button>
+                                        <button type="button" class="btn btn-publish">Publish Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="media-tab">
+                    <!-- Your existing media content -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Media Management</h2>
+                            <div class="media-type-selector">
+                                <label for="media-type" class="visually-hidden">Select Media Type</label>
+                                <select id="media-type" title="Select Media Type">
+                                    <option value="podcasts">Podcasts</option>
+                                    <option value="gallery">Gallery</option>
+                                    <option value="videos">Videos</option>
+                                </select>
+                                <button class="btn" id="add-media-btn">
+                                    <i class="fas fa-plus"></i> Add Media
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="section-body">
+                            <!-- Media Items Grid -->
+                            <div class="media-grid" id="media-items-container">
+                                <!-- Sample media item - will be populated by JS -->
+                                <div class="media-item">
+                                    <div class="media-thumbnail">
+                                        <img src="images/podcast1.jpg" alt="Podcast thumbnail">
+                                        <div class="media-actions">
+                                            <button class="btn-edit" title="Edit Media"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete Media"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-feature" title="Feature Media"><i class="fas fa-star"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="media-info">
+                                        <h4>Post-match Analysis</h4>
+                                        <p>Published: 2023-08-10</p>
+                                        <span class="status-featured">Featured</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Media Upload Form (initially hidden) -->
+                            <div id="media-form-container" class="form-container">
+                                <h3>Upload New Media</h3>
+                                <form id="media-form" class="admin-form" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="media-title">Title</label>
+                                        <input type="text" id="media-title" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="media-file">File</label>
+                                        <input type="file" id="media-file" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="media-description">Description</label>
+                                        <textarea id="media-description" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" id="feature-media"> Feature this item
+                                        </label>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-save">Upload Media</button>
+                                        <button type="button" class="btn btn-cancel">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Contact Info on Dashboard -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Contact Information</h2>
+                        </div>
+                        <div class="section-body">
+                            <div class="contact-cards">
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                                    <div class="contact-info">
+                                        <p>Mombasa Hamlets FC</p>
+                                        <p>Sports Road, Mombasa</p>
+                                        <p>Kenya</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                                    <div class="contact-info">
+                                        <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+                                        <p><i class="fas fa-envelope"></i> info@mombasahamlets.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                                    <div class="contact-info">
+                                        <p>Monday - Friday: 9am - 5pm</p>
+                                        <p>Saturday: 10am - 2pm</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shop Tab Content -->
+                <div class="tab-content" id="shop-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Product Management</h2>
+                            <button class="btn" id="add-product-btn">
+                                <i class="fas fa-plus"></i> Add Product
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <!-- Products Table -->
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Stock</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="products-list">
+                                    <!-- Sample product - will be populated by JS -->
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="images/jersey-home.jpg" alt="Home Jersey">
+                                                <span>Home Jersey 2023</span>
+                                            </div>
+                                        </td>
+                                        <td>Jerseys</td>
+                                        <td>$89.99</td>
+                                        <td>42</td>
+                                        <td><span class="status-active">Active</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit Product"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete Product"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-toggle-status" title="Toggle Product Status"><i class="fas fa-toggle-on"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="images/scarf.jpg" alt="Team Scarf">
+                                                <span>Team Scarf</span>
+                                            </div>
+                                        </td>
+                                        <td>Accessories</td>
+                                        <td>$24.99</td>
+                                        <td>100</td>
+                                        <td><span class="status-active">Active</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit Product"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete Product"><i class="fas fa-trash"></i></button>
+                                            <button class="btn-toggle-status" title="Toggle Product Status"><i class="fas fa-toggle-on"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Add New Product</h2>
+                        <form id="product-form" class="admin-form">
+                            <input type="hidden" id="product-id">
+                            <div class="form-group">
+                                <label for="product-name">Product Name</label>
+                                <input type="text" id="product-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-category">Category</label>
+                                <select id="product-category" required>
+                                    <option value="jerseys">Jerseys</option>
+                                    <option value="shorts">Shorts</option>
+                                    <option value="socks">Socks</option>
+                                    <option value="accessories">Accessories</option>
+                                    <option value="equipment">Equipment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-price">Price ($)</label>
+                                <input type="number" id="product-price" min="0" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-stock">Stock Quantity</label>
+                                <input type="number" id="product-stock" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-description">Description</label>
+                                <textarea id="product-description" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-image">Product Image</label>
+                                <input type="file" id="product-image">
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-save">Save Product</button>
+                                <button type="button" class="btn btn-cancel">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Events Tab Content -->
+                <div class="tab-content" id="events-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Events Management</h2>
+                            <button class="btn" id="add-event-btn">
+                                <i class="fas fa-plus"></i> Add New Event
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Event</th>
+                                        <th>Location</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-09-15</td>
+                                        <td>Season Opening Ceremony</td>
+                                        <td>Main Stadium</td>
+                                        <td><span class="status-active">Upcoming</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-30</td>
+                                        <td>Fan Meet & Greet</td>
+                                        <td>Club House</td>
+                                        <td><span class="status-published">Completed</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="Edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Upcoming Events</h2>
+                        <div class="event-calendar">
+                            <div class="event-item">
+                                <div class="event-date">Sep 15, 2023 | 4:00 PM</div>
+                                <div class="event-title">Season Opening Ceremony</div>
+                                <div class="event-description">Join us as we kick off the new season with special guests and performances.</div>
+                                <button class="btn">View Details</button>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">Sep 22, 2023 | 7:00 PM</div>
+                                <div class="event-title">Charity Match</div>
+                                <div class="event-description">Our players vs local celebrities for a good cause.</div>
+                                <button class="btn">View Details</button>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">Oct 5, 2023 | 10:00 AM</div>
+                                <div class="event-title">Youth Training Camp</div>
+                                <div class="event-description">Free training session for young aspiring players aged 10-16.</div>
+                                <button class="btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Tab Content -->
+                <div class="tab-content" id="about-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Club Information</h2>
+                            <button class="btn" id="edit-about-btn">
+                                <i class="fas fa-edit"></i> Edit Information
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <form id="about-form" class="admin-form">
+                                <div class="form-group">
+                                    <label for="club-name">Club Name</label>
+                                    <input type="text" id="club-name" value="Mombasa Hamlets FC" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="founded-year">Founded Year</label>
+                                    <input type="number" id="founded-year" value="1995" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="stadium">Home Stadium</label>
+                                    <input type="text" id="stadium" value="Hamlets Arena" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="club-description">Club Description</label>
+                                    <textarea id="club-description" rows="6" required>Mombasa Hamlets FC is a professional football club based in Mombasa, Kenya. Founded in 1995, we compete in the Kenyan Premier League and have a rich history of developing young talent and playing attractive, attacking football.</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="club-values">Club Values</label>
+                                    <textarea id="club-values" rows="4" required>Community, Excellence, Integrity, Passion, Development</textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-save">Save Information</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Management Team</h2>
+                        </div>
+                        <div class="section-body">
+                            <div class="team-members">
+                                <div class="team-member">
+                                    <img src="https://via.placeholder.com/100" alt="Team Member">
+                                    <h3>John Kamau</h3>
+                                    <div class="team-role">Club President</div>
+                                    <p>Leading the club since 2010</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="https://via.placeholder.com/100" alt="Team Member">
+                                    <h3>Sarah Achieng</h3>
+                                    <div class="team-role">Head Coach</div>
+                                    <p>Former national team player</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="https://via.placeholder.com/100" alt="Team Member">
+                                    <h3>Michael Otieno</h3>
+                                    <div class="team-role">Technical Director</div>
+                                    <p>Youth development expert</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Tab Content -->
+                <div class="tab-content" id="contact-tab">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Contact Messages</h2>
+                        </div>
+                        
+                        <div class="section-body">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Subject</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-08-20</td>
+                                        <td>James Mwangi</td>
+                                        <td>james@example.com</td>
+                                        <td>Season Ticket Inquiry</td>
+                                        <td><span class="status-published">New</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-18</td>
+                                        <td>Lucy Wanjiku</td>
+                                        <td>lucy@example.com</td>
+                                        <td>Partnership Opportunity</td>
+                                        <td><span class="status-active">In Progress</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-08-15</td>
+                                        <td>Robert Ochieng</td>
+                                        <td>robert@example.com</td>
+                                        <td>Youth Team Tryouts</td>
+                                        <td><span class="status-active">Resolved</span></td>
+                                        <td class="actions">
+                                            <button class="btn-edit" title="View"><i class="fas fa-eye"></i></button>
+                                            <button class="btn-delete" title="Delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>Contact Information</h2>
+                            <button class="btn" id="edit-contact-btn">
+                                <i class="fas fa-edit"></i> Edit Information
+                            </button>
+                        </div>
+                        
+                        <div class="section-body">
+                            <div class="contact-cards">
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                                    <div class="contact-info">
+                                        <p><i class="fas fa-building"></i> Mombasa Hamlets FC</p>
+                                        <p><i class="fas fa-road"></i> Sports Road, Mombasa</p>
+                                        <p><i class="fas fa-globe"></i> Kenya</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-phone"></i> Phone & Email</h3>
+                                    <div class="contact-info">
+                                        <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+                                        <p><i class="fas fa-envelope"></i> info@mombasahamlets.com</p>
+                                        <p><i class="fas fa-ticket-alt"></i> tickets@mombasahamlets.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                                    <div class="contact-info">
+                                        <p><i class="fas fa-calendar-day"></i> Monday - Friday: 9am - 5pm</p>
+                                        <p><i class="fas fa-calendar-day"></i> Saturday: 10am - 2pm</p>
+                                        <p><i class="fas fa-calendar-day"></i> Sunday: Closed</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-card">
+                                    <h3><i class="fas fa-share-alt"></i> Social Media</h3>
+                                    <div class="contact-info">
+                                        <p><i class="fab fa-facebook"></i> Facebook: /mombasahamlets</p>
+                                        <p><i class="fab fa-twitter"></i> Twitter: @mombasahamlets</p>
+                                        <p><i class="fab fa-instagram"></i> Instagram: @mombasahamlets</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>

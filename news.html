@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Mombasa Hamlets FC</title>
+    <meta name="description" content="Latest news and updates from Mombasa Hamlets Football Club">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/news.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <aside class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="sidebar-logo">
+            </div>
+            <button class="sidebar-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/news.html" class="active"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="/matches.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                <li><a href="/players.html"><i class="fas fa-users"></i> Players</a></li>
+                <li><a href="/media.html"><i class="fas fa-photo-video"></i> Media</a></li>
+                <li><a href="/shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                <li><a href="/events.html"><i class="fas fa-calendar-check"></i> Events</a></li>
+                <li><a href="/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="header-logo">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/news.html" class="active">News</a></li>
+                <li><a href="/matches.html">Matches</a></li>
+                <li><a href="/players.html">Players</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="news-hero">
+            <h1>Club News</h1>
+            <p>Stay updated with the latest from Mombasa Hamlets FC</p>
+        </section>
+
+        <div class="news-container">
+            <div class="news-categories">
+                <button class="category-btn active" data-category="all">All News</button>
+                <button class="category-btn" data-category="match-reports">Match Reports</button>
+                <button class="category-btn" data-category="transfers">Transfers</button>
+                <button class="category-btn" data-category="academy">Academy</button>
+                <button class="category-btn" data-category="community">Community</button>
+                <button class="category-btn" data-category="interviews">Interviews</button>
+            </div>
+
+            <div class="news-grid">
+                <!-- News Article 1 - Match Reports -->
+                <article class="news-article" data-category="match-reports">
+                    <img src="/images/1.jpeg" alt="Team celebrating victory" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">June 15, 2025 | Match Reports</div>
+                        <h2 class="article-title">Hamlets Secure Dramatic Last-Minute Victory</h2>
+                        <p class="article-excerpt">Mombasa Hamlets came from behind to snatch a thrilling 2-1 victory against rivals Coastal United with a stoppage-time winner from captain Ali Mwinyi.</p>
+                        <a href="/news-single.html?id=1" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 2 - Transfers -->
+                <article class="news-article" data-category="transfers">
+                    <img src="/images/2.jpeg" alt="New signing announcement" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">June 10, 2025 | Transfers</div>
+                        <h2 class="article-title">Hamlets Sign Promising Young Striker</h2>
+                        <p class="article-excerpt">The club is delighted to announce the signing of 19-year-old striker Jamal Abdi from Nairobi Youth Academy on a three-year contract.</p>
+                        <a href="/news-single.html?id=2" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 3 - Community -->
+                <article class="news-article" data-category="community">
+                    <img src="/images/3.jpeg" alt="Community event" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">June 5, 2025 | Community</div>
+                        <h2 class="article-title">Players Visit Local Children's Hospital</h2>
+                        <p class="article-excerpt">First-team players spent the afternoon at Mombasa Children's Hospital, bringing smiles and gifts to young patients as part of the club's community outreach program.</p>
+                        <a href="/news-single.html?id=3" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 4 - Academy -->
+                <article class="news-article" data-category="academy">
+                    <img src="/images/4.jpeg" alt="Academy team" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">May 28, 2025 | Academy</div>
+                        <h2 class="article-title">U18s Reach National Cup Final</h2>
+                        <p class="article-excerpt">Our youth team secured their place in the National Youth Cup Final with a comprehensive 3-0 victory over Kisumu All-Stars in the semifinal.</p>
+                        <a href="/news-single.html?id=4" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 5 - Interviews -->
+                <article class="news-article" data-category="interviews">
+                    <img src="/images/5.jpeg" alt="Manager interview" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">May 22, 2025 | Interviews</div>
+                        <h2 class="article-title">Manager Discusses Season Objectives</h2>
+                        <p class="article-excerpt">In an exclusive interview, head coach Rajab Ali shares his thoughts on the team's progress and targets for the remainder of the season.</p>
+                        <a href="/news-single.html?id=5" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 6 - Match Reports -->
+                <article class="news-article" data-category="match-reports">
+                    <img src="/images/6.jpg" alt="Stadium with fans" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">May 15, 2025 | Match Reports</div>
+                        <h2 class="article-title">Hamlets Dominate Derby Match</h2>
+                        <p class="article-excerpt">Mombasa Hamlets showed their superiority in the local derby with a commanding 4-0 victory over Mombasa City FC.</p>
+                        <a href="/news-single.html?id=6" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 7 - Transfers -->
+                <article class="news-article" data-category="transfers">
+                    <img src="/images/7.jpg" alt="Contract signing" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">May 10, 2025 | Transfers</div>
+                        <h2 class="article-title">Midfielder Extends Contract Until 2027</h2>
+                        <p class="article-excerpt">Club captain Ahmed Salim has signed a two-year contract extension, keeping him at Hamlets until the end of the 2027 season.</p>
+                        <a href="/news-single.html?id=7" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 8 - Academy -->
+                <article class="news-article" data-category="academy">
+                    <img src="/images/8.jpg" alt="Youth players training" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">April 28, 2025 | Academy</div>
+                        <h2 class="article-title">Three Academy Players Called for National Duty</h2>
+                        <p class="article-excerpt">Three of our brightest academy talents have been selected to represent Kenya in the upcoming U-20 African Championships.</p>
+                        <a href="/news-single.html?id=8" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 9 - Community -->
+                <article class="news-article" data-category="community">
+                    <img src="/images/9.jpg" alt="Football clinic" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">April 20, 2025 | Community</div>
+                        <h2 class="article-title">Hamlets Launch Free Football Clinics</h2>
+                        <p class="article-excerpt">The club has launched a series of free football clinics for underprivileged children across Mombasa county.</p>
+                        <a href="/news-single.html?id=9" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Article 10 - Interviews -->
+                <article class="news-article" data-category="interviews">
+                    <img src="/images/10.jpg" alt="Player interview" class="article-image">
+                    <div class="article-content">
+                        <div class="article-date">April 15, 2025 | Interviews</div>
+                        <h2 class="article-title">Star Goalkeeper Talks Clean Sheet Record</h2>
+                        <p class="article-excerpt">In an exclusive interview, our first-choice goalkeeper Fatuma Ahmed discusses her impressive run of 10 clean sheets this season.</p>
+                        <a href="/news-single.html?id=10" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn">Previous</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Use</a>
+            </div>
+            <p>&copy; 2025 Mombasa Hamlets FC. All rights reserved.</p>
+        </div>
+    </footer>
+   <script src="/js/main.js"></script>
+</body>
+</html>

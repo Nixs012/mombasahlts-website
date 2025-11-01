@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Mombasa Hamlets FC</title>
+    <meta name="description" content="Official media gallery of Mombasa Hamlets Football Club">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <aside class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="sidebar-logo">
+            </div>
+            <button class="sidebar-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="/matches.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                <li><a href="/players.html"><i class="fas fa-users"></i> Players</a></li>
+                <li><a href="/media.html" class="active"><i class="fas fa-photo-video"></i> Media</a></li>
+                <li><a href="/shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                <li><a href="/events.html"><i class="fas fa-calendar-check"></i> Events</a></li>
+                <li><a href="/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="header-logo">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/matches.html">Matches</a></li>
+                <li><a href="/players.html">Players</a></li>
+                <li><a href="/media.html" class="active">Media</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero media-hero">
+            <div class="hero-content">
+                <h1 class="animate-pop-in">Media Gallery</h1>
+                <p class="animate-pop-in">Behind the scenes and match highlights</p>
+            </div>
+        </section>
+
+        <!-- Media Filters -->
+        <section class="media-filters" aria-labelledby="media-filters-heading">
+            <h2 id="media-filters-heading" class="visually-hidden">Media Filters</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Media</button>
+                <button class="filter-btn" data-filter="photos">Photos</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+                <button class="filter-btn" data-filter="matches">Match Highlights</button>
+                <button class="filter-btn" data-filter="training">Training</button>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section class="media-section" aria-labelledby="photos-heading">
+            <h2 id="photos-heading" class="section-title">Photos</h2>
+            <div class="photo-grid">
+                <!-- Photo 1 -->
+                <div class="photo-card" data-category="matches">
+                    <img src="/images/9.jpg" alt="Team celebrating a goal" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>Victory Celebration</h3>
+                            <p>Team celebrates after scoring against Coastal United</p>
+                            <span class="photo-date">June 15, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="photo-card" data-category="training">
+                    <img src="/images/media2.jpg" alt="Team training session" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>Training Session</h3>
+                            <p>Players during morning practice at Nyayo Stadium</p>
+                            <span class="photo-date">June 12, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="photo-card" data-category="matches">
+                    <img src="/images/media3.jpg" alt="Player scoring a goal" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>Winning Goal</h3>
+                            <p>Ali Mwinyi scores the winning goal in stoppage time</p>
+                            <span class="photo-date">June 15, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="photo-card" data-category="training">
+                    <img src="/images/media4.jpg" alt="Team strategy session" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>Tactical Discussion</h3>
+                            <p>Coach explaining strategy to the team</p>
+                            <span class="photo-date">June 10, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="photo-card" data-category="photos">
+                    <img src="/images/7.jpg" alt="New signing presentation" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>New Signing</h3>
+                            <p>Jamal Abdi presented to fans and media</p>
+                            <span class="photo-date">June 10, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="photo-card" data-category="photos">
+                    <img src="/images/media6.jpg" alt="Fans cheering" class="photo-image">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>Fan Support</h3>
+                            <p>Hamlets supporters during the last home match</p>
+                            <span class="photo-date">June 8, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="media-section" aria-labelledby="videos-heading">
+            <h2 id="videos-heading" class="section-title">Videos</h2>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card" data-category="matches">
+                    <div class="video-thumbnail">
+                        <img src="/images/video1-thumb.jpg" alt="Match highlights thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Mombasa Hamlets vs Coastal United - Highlights</h3>
+                        <p>Relive the thrilling 2-1 victory with all the key moments</p>
+                        <span class="video-duration">4:32</span>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card" data-category="training">
+                    <div class="video-thumbnail">
+                        <img src="/images/video2-thumb.jpg" alt="Training session thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Behind the Scenes: Training Session</h3>
+                        <p>Go behind the scenes at our preparation for the derby</p>
+                        <span class="video-duration">7:15</span>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card" data-category="matches">
+                    <div class="video-thumbnail">
+                        <img src="/images/video3-thumb.jpg" alt="Player interview thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Post-Match Interview: Captain Ali Mwinyi</h3>
+                        <p>Our captain shares his thoughts on the dramatic win</p>
+                        <span class="video-duration">3:45</span>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card" data-category="photos">
+                    <div class="video-thumbnail">
+                        <img src="/images/video4-thumb.jpg" alt="Community event thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Community Day: Hospital Visit</h3>
+                        <p>Players spending time with children at local hospital</p>
+                        <span class="video-duration">5:20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Media Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn">Load More Media</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Use</a>
+            </div>
+            <p>&copy; 2025 Mombasa Hamlets FC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-body">
+                <img src="" alt="" class="lightbox-image">
+                <div class="lightbox-caption"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/media.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

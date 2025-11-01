@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Mombasa Hamlets FC</title>
+    <meta name="description" content="Event details for Mombasa Hamlets Football Club">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/event-single.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <aside class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="sidebar-logo">
+            </div>
+            <button class="sidebar-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="/matches.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                <li><a href="/players.html"><i class="fas fa-users"></i> Players</a></li>
+                <li><a href="/media.html"><i class="fas fa-photo-video"></i> Media</a></li>
+                <li><a href="/shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                <li><a href="/events.html" class="active"><i class="fas fa-calendar-check"></i> Events</a></li>
+                <li><a href="/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="/images/29.jpg" alt="Mombasa Hamlets Logo" class="header-logo">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/matches.html">Matches</a></li>
+                <li><a href="/players.html">Players</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/events.html" class="active">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- The rest of your event-single.html content goes here -->
+<main>
+        <section class="page-hero">
+            <div class="container hero-content">
+                <h1 class="animate-pop-in">Club Events</h1>
+                <p class="animate-pop-in">Join us for exciting events throughout the season</p>
+            </div>
+        </section>
+
+        <section class="events-container" aria-labelledby="events-heading">
+            <div class="container">
+                <h2 id="events-heading" class="section-title">Upcoming Events</h2>
+                
+                <div class="events-filter">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="matches">Matches</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                    <button class="filter-btn" data-filter="meet-greet">Meet & Greet</button>
+                    <button class="filter-btn" data-filter="special">Special Events</button>
+                </div>
+                
+                <div class="events-grid">
+                    <!-- Event 1 -->
+                    <article class="event-card" data-category="matches">
+                        <div class="event-date">
+                            <span class="date-day">28</span>
+                            <span class="date-month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coastal Derby Match">
+                            <span class="event-tag">Match</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Coastal Derby: Hamlets vs. Sharks FC</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 3:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mombasa Municipal Stadium</span>
+                            </div>
+                            <p class="event-excerpt">Don't miss the biggest derby of the season as we take on our rivals Sharks FC in what promises to be an electrifying match.</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary get-tickets-btn" data-event="Coastal Derby: Hamlets vs. Sharks FC">Get Tickets</button>
+                                <a href="/event-single.html?id=1" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="event-card" data-category="community">
+                        <div class="event-date">
+                            <span class="date-day">05</span>
+                            <span class="date-month">JUL</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Youth Football Clinic">
+                            <span class="event-tag">Community</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Youth Football Training Clinic</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 9:00 AM - 12:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Hamlets Training Ground</span>
+                            </div>
+                            <p class="event-excerpt">Our annual youth clinic for ages 8-16. Learn from first-team players and coaches. Limited spots available!</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary register-btn" data-event="Youth Football Training Clinic">Register</button>
+                                <a href="/event-single.html?id=2" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="event-card" data-category="meet-greet">
+                        <div class="event-date">
+                            <span class="date-day">12</span>
+                            <span class="date-month">JUL</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1306&q=80" alt="Fan Meet and Greet">
+                            <span class="event-tag">Meet & Greet</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Season Ticket Holder Meet & Greet</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 2:00 PM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Club Lounge</span>
+                            </div>
+                            <p class="event-excerpt">Exclusive event for our season ticket holders. Meet the players, get autographs, and enjoy refreshments.</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary rsvp-btn" data-event="Season Ticket Holder Meet & Greet">RSVP</button>
+                                <a href="/event-single.html?id=3" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 4 -->
+                    <article class="event-card" data-category="special">
+                        <div class="event-date">
+                            <span class="date-day">20</span>
+                            <span class="date-month">JUL</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1551796886-9e7932323dfe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Charity Gala Dinner">
+                            <span class="event-tag">Special Event</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Annual Charity Gala Dinner</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 7:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mombasa Serena Hotel</span>
+                            </div>
+                            <p class="event-excerpt">Join us for an elegant evening of fine dining and auctions to support the Mombasa Youth Sports Foundation.</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary buy-tickets-btn" data-event="Annual Charity Gala Dinner">Buy Tickets</button>
+                                <a href="/event-single.html?id=4" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 5 -->
+                    <article class="event-card" data-category="matches">
+                        <div class="event-date">
+                            <span class="date-day">02</span>
+                            <span class="date-month">AUG</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cup Quarter Final">
+                            <span class="event-tag">Match</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Coastal Cup Quarter Final</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 4:30 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mombasa Municipal Stadium</span>
+                            </div>
+                            <p class="event-excerpt">Crucial cup match as we face Malindi Stars for a place in the semi-finals. Come support the team!</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary get-tickets-btn" data-event="Coastal Cup Quarter Final">Get Tickets</button>
+                                <a href="/event-single.html?id=5" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 6 -->
+                    <article class="event-card" data-category="community">
+                        <div class="event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">AUG</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1577741314755-048c852f5a4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Stadium Tour">
+                            <span class="event-tag">Community</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Behind-the-Scenes Stadium Tour</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock"></i> 10:00 AM & 2:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mombasa Municipal Stadium</span>
+                            </div>
+                            <p class="event-excerpt">Exclusive access to areas normally off-limits to fans. Visit the dressing rooms, tunnel, and pitchside.</p>
+                            <div class="event-actions">
+                                <button class="btn btn-primary book-tour-btn" data-event="Behind-the-Scenes Stadium Tour">Book Tour</button>
+                                <a href="/event-single.html?id=6" class="btn btn-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="section-title">Past Events</h2>
+                <div class="events-grid past-events">
+                    <!-- Past Event 1 -->
+                    <article class="event-card past-event" data-category="matches">
+                        <div class="event-date past">
+                            <span class="date-day">14</span>
+                            <span class="date-month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1596510913920-85d87a1800d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hamlets vs. United">
+                            <span class="event-tag">Match</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Hamlets 3 - 1 Coastal United</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Mombasa Municipal Stadium</span>
+                            </div>
+                            <p class="event-excerpt">A dominant performance secured all three points in our opening match of the season.</p>
+                            <a href="/event-single.html?id=7" class="btn btn-secondary">Match Report</a>
+                        </div>
+                    </article>
+
+                    <!-- Past Event 2 -->
+                    <article class="event-card past-event" data-category="community">
+                        <div class="event-date past">
+                            <span class="date-day">01</span>
+                            <span class="date-month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1580375605115-2e6489393e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Community Cleanup">
+                            <span class="event-tag">Community</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Beach Cleanup Initiative</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Nyali Beach</span>
+                            </div>
+                            <p class="event-excerpt">Players and fans joined forces to clean up our local beach and promote environmental awareness.</p>
+                            <a href="/event-single.html?id=8" class="btn btn-secondary">See Photos</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <h2 id="newsletter-heading">Never Miss an Event</h2>
+                <p>Subscribe to our newsletter and be the first to know about upcoming matches, special events, and ticket sales.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" aria-label="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Ticket Purchase/Registration -->
+    <div class="modal" id="ticketModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title" id="modalEventTitle">Purchase Tickets</h2>
+            <div id="modalBody">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Use</a>
+            </div>
+            <p>&copy; 2025 Mombasa Hamlets FC. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="/js/main.js"></script>
+<script src="/js/event.js"></script>
+</body>
+</html>
